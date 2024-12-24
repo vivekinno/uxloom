@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animation-running-scooter {
+    position: relative;
+    animation: move-scooter 4s linear infinite;
+  } */
+  
+  /* @keyframes move-scooter {
+    0% {
+      transform: translateX(-20px);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(-20px);
+    }
+  } */
+
+  @font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-Regular.woff2') format('woff2'),
+         url('/fonts/Metropolis-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
