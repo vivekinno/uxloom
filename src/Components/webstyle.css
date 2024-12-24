@@ -1,0 +1,24 @@
+.device-web-style {
+  align-items: center;
+  background-color: var(--primaryorange);
+  border-radius: 12px;
+  display: inline-flex;
+  gap: 4px;
+  justify-content: center;
+  padding: 17px 16px;
+  position: relative;
+}
+
+.device-web-style .button {
+  color: var(--textwhite);
+  font-family: var(--web-display-7-font-family);
+  font-size: var(--web-display-7-font-size);
+  font-style: var(--web-display-7-font-style);
+  font-weight: var(--web-display-7-font-weight);
+  letter-spacing: var(--web-display-7-letter-spacing);
+  line-height: var(--web-display-7-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

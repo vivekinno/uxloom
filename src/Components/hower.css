@@ -1,0 +1,275 @@
+.style-whatsapp-hover-wrapper .group {
+  height: 48px;
+  left: 0;
+  position: absolute;
+  width: 137px;
+}
+
+.style-whatsapp-hover-wrapper .overlap-group {
+  background-size: 100% 100%;
+  position: relative;
+  width: 197px;
+}
+
+.style-whatsapp-hover-wrapper .div {
+  color: var(--textblack);
+  font-family: var(--web-body-5-font-family);
+  font-size: var(--web-body-5-font-size);
+  font-style: var(--web-body-5-font-style);
+  font-weight: var(--web-body-5-font-weight);
+  letter-spacing: var(--web-body-5-letter-spacing);
+  line-height: var(--web-body-5-line-height);
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.style-whatsapp-hover-wrapper .image {
+  height: 72px;
+  left: 142px;
+  position: absolute;
+  top: 0;
+  width: 65px;
+}
+
+.style-whatsapp-hover-wrapper .group-2 {
+  border-radius: 30px;
+  box-shadow: 0px 4px 24px #0743a333;
+  height: 60px;
+  left: 144px;
+  position: absolute;
+  top: 0;
+  width: 60px;
+}
+
+.style-whatsapp-hover-wrapper .sms {
+  height: 34px;
+  left: 13px;
+  position: relative;
+  top: 13px;
+  width: 34px;
+}
+
+.style-whatsapp-hover-wrapper .vector {
+  height: 20px;
+  left: 7px;
+  position: absolute;
+  top: 7px;
+  width: 20px;
+}
+
+.style-whatsapp-hover-wrapper .ellipse {
+  background-color: var(--primaryblue);
+  border-radius: 7.88px;
+  height: 16px;
+  left: 6px;
+  position: absolute;
+  top: 2px;
+  width: 16px;
+}
+
+.style-whatsapp-hover-wrapper .img {
+  height: 25px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 27px;
+}
+
+.style-whatsapp-hover-wrapper .mail {
+  height: 34px;
+  left: 13px;
+  position: absolute;
+  top: 13px;
+  width: 34px;
+}
+
+.style-whatsapp-hover-wrapper .group-3 {
+  border-radius: 30px;
+  box-shadow: 0px 4px 24px #0743a333;
+  height: 60px;
+  left: 144px;
+  position: relative;
+  width: 60px;
+}
+
+.style-whatsapp-hover-wrapper.hover-true {
+  position: relative;
+}
+
+.style-whatsapp-hover-wrapper.email {
+  height: 60px;
+  width: 204px;
+}
+
+.style-whatsapp-hover-wrapper.whatsapp {
+  height: 72px;
+  position: relative;
+  width: 207px;
+}
+
+.style-whatsapp-hover-wrapper.chat {
+  height: 60px;
+  width: 204px;
+}
+
+.style-whatsapp-hover-wrapper.call {
+  height: 60px;
+  width: 204px;
+}
+
+.style-whatsapp-hover-wrapper.whatsapp .group {
+  top: 12px;
+}
+
+.style-whatsapp-hover-wrapper.call .group {
+  top: 8px;
+}
+
+.style-whatsapp-hover-wrapper.chat .group {
+  top: 6px;
+}
+
+.style-whatsapp-hover-wrapper.email .group {
+  top: 6px;
+}
+
+.style-whatsapp-hover-wrapper.whatsapp .overlap-group {
+  background-image: url(https://c.animaapp.com/g1v2RMFM/img/union.svg);
+  height: 124px;
+  top: -12px;
+}
+
+.style-whatsapp-hover-wrapper.call .overlap-group {
+  background-image: url(https://c.animaapp.com/g1v2RMFM/img/union-2.svg);
+  height: 120px;
+  top: -8px;
+}
+
+.style-whatsapp-hover-wrapper.chat .overlap-group {
+  background-image: url(https://c.animaapp.com/g1v2RMFM/img/union-1.svg);
+  height: 118px;
+  top: -6px;
+}
+
+.style-whatsapp-hover-wrapper.email .overlap-group {
+  background-image: url(https://c.animaapp.com/g1v2RMFM/img/union-3.svg);
+  height: 118px;
+  top: -6px;
+}
+
+.style-whatsapp-hover-wrapper.whatsapp .div {
+  left: 17px;
+  top: 27px;
+}
+
+.style-whatsapp-hover-wrapper.call .div {
+  left: 34px;
+  top: 23px;
+}
+
+.style-whatsapp-hover-wrapper.chat .div {
+  left: 43px;
+  top: 21px;
+}
+
+.style-whatsapp-hover-wrapper.email .div {
+  left: 26px;
+  top: 21px;
+}
+
+.style-whatsapp-hover-wrapper.whatsapp .group-2 {
+  background-color: var(--primaryblue);
+}
+
+.style-whatsapp-hover-wrapper.call .group-2 {
+  background-color: var(--primaryorange);
+}
+
+.style-whatsapp-hover-wrapper.chat .group-2 {
+  background-color: var(--primaryblue);
+}
+
+.style-whatsapp-hover-wrapper.email .group-2 {
+  background-color: #1cb1b6;
+}
+
+.style-whatsapp-hover-wrapper.whatsapp .sms-dp-f {
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.style-whatsapp-hover-wrapper.call .sms-dp-f {
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.style-whatsapp-hover-wrapper.chat .sms-dp-f {
+  height: 25px;
+  left: 4px;
+  position: relative;
+  top: 4px;
+  width: 27px;
+}
+
+.style-whatsapp-hover-wrapper.email .sms-dp-f {
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.style-whatsapp-hover-wrapper.whatsapp .group-3 {
+  background-color: var(--primaryblue);
+}
+
+.style-whatsapp-hover-wrapper.call .group-3 {
+  background-color: var(--primaryorange);
+}
+
+.style-whatsapp-hover-wrapper.chat .group-3 {
+  background-color: var(--primaryblue);
+}
+
+.style-whatsapp-hover-wrapper.email .group-3 {
+  background-color: #1cb1b6;
+}
+
+.style-whatsapp-hover-wrapper.whatsapp .sms-dp-f {
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.style-whatsapp-hover-wrapper.call .sms-dp-f {
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.style-whatsapp-hover-wrapper.chat .sms-dp-f {
+  height: 25px;
+  left: 4px;
+  position: relative;
+  top: 4px;
+  width: 27px;
+}
+
+.style-whatsapp-hover-wrapper.email .sms-dp-f {
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}

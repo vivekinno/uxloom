@@ -1,0 +1,85 @@
+.CTA {
+  align-items: center;
+  display: inline-flex;
+  gap: 4px;
+  justify-content: center;
+  position: relative;
+}
+
+.CTA .text-wrapper {
+  font-family: var(--web-display-7-font-family);
+  font-size: var(--web-display-7-font-size);
+  font-style: var(--web-display-7-font-style);
+  font-weight: var(--web-display-7-font-weight);
+  letter-spacing: var(--web-display-7-letter-spacing);
+  line-height: var(--web-display-7-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.CTA .system-icons-back {
+  height: 18px !important;
+  position: relative !important;
+  width: 18px !important;
+}
+
+.CTA .frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.CTA .system-icons-back-3 {
+  height: 18px !important;
+  margin-left: -9px !important;
+  position: relative !important;
+  width: 18px !important;
+}
+
+.CTA.primary-with-icon {
+  background-color: var(--primaryblue);
+  border-radius: 12px;
+  padding: 17px 16px;
+}
+
+.CTA.rounded {
+  background-color: var(--primaryblue);
+  border-radius: 36px;
+  padding: 17px 20px;
+}
+
+.CTA.special-CTA {
+  background-color: var(--primaryblue);
+  border-color: var(--primaryorange);
+  border-radius: 36px;
+  border-right-style: solid;
+  border-right-width: 4px;
+  padding: 17px 20px;
+}
+
+.CTA.text-with-icon {
+  border-radius: 12px;
+  padding: 17px 16px;
+}
+
+.CTA.primary-with-icon .text-wrapper {
+  color: #ffffffb2;
+  margin-top: -1px;
+}
+
+.CTA.rounded .text-wrapper {
+  color: var(--textwhite);
+  margin-top: -1px;
+}
+
+.CTA.special-CTA .text-wrapper {
+  color: var(--textwhite);
+  margin-top: -4px;
+}
+
+.CTA.text-with-icon .text-wrapper {
+  color: var(--textgrey);
+  margin-top: -1px;
+}
