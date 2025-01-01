@@ -23,14 +23,8 @@ export const StyleWhatsappHoverWrapper = ({
   return (
     <div
       className={`style-whatsapp-hover-wrapper hover-${state.hover} ${state.style} ${className}`}
-      onMouseEnter={() => {
-        dispatch("mouse_enter");
-      }}
-      onMouseLeave={() => {
-        dispatch("mouse_leave");
-      }}
     >
-      {state.hover && (
+      {/* {state.hover && (
         <div className="group">
           <div className="overlap-group">
             <div className="div">
@@ -44,13 +38,16 @@ export const StyleWhatsappHoverWrapper = ({
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {state.hover && state.style === "whatsapp" && (
         <img
           className="image"
           alt="Image"
-          src="https://c.animaapp.com/g1v2RMFM/img/image-4459-1@2x.png"
+          src="https://innovartan.s3.amazonaws.com/f9875cecec3544745e59ff034f28e6482121016360/453606f53e1ca8b9e687741ee0b99029.png"
+          onClick={() => {
+            window.open("https://join.skype.com/invite/qve74QlTOTm2", "_blank");
+          }}
         />
       )}
 

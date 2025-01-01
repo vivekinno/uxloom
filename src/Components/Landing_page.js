@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Cta } from "../Components/CTA";
 import { DeviceWebStyle } from "./Webstyle";
 import { StyleWhatsappHoverWrapper } from "./Hower";
@@ -9,6 +9,106 @@ import { StickyAnimationm } from "../Components/Stickyanimation";
 import "../styles.css";
 
 export const LandingPage = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    projectDetails: "",
+  });
+  const [errors, setErrors] = useState({
+    fullName: "",
+    email: "",
+    projectDetails: "",
+  });
+
+  const validateForm = () => {
+    let valid = true;
+    let errors = {};
+
+    // Validate Full Name
+    if (!formData.fullName) {
+      errors.fullName = "Full Name is required";
+      valid = false;
+    } else if (formData.fullName.length > 50) {
+      errors.fullName = "Full Name cannot exceed 50 characters";
+      valid = false;
+    }
+
+    // Validate Email
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!formData.email) {
+      errors.email = "Email is required";
+      valid = false;
+    } else if (!emailRegex.test(formData.email)) {
+      errors.email = "Invalid email format";
+      valid = false;
+    } else if (formData.email.length > 30) {
+      errors.email = "Email cannot exceed 30 characters";
+      valid = false;
+    }
+
+    // Validate Project Details
+    if (!formData.projectDetails) {
+      errors.projectDetails = "Project Details are required";
+      valid = false;
+    } else if (formData.projectDetails.length > 500) {
+      errors.projectDetails = "Project Details cannot exceed 500 characters";
+      valid = false;
+    }
+
+    setErrors(errors);
+    return valid;
+  };
+
+  const handleSubmit = (e) => {
+    console.log("Form submitted successfully", formData);
+
+    e.preventDefault();
+    if (validateForm()) {
+
+      console.log("Form submitted successfully", formData);
+      
+      // Handle form submission here
+      const { fullName, email, projectDetails } = formData;
+
+      // Generate mailto link
+      const mailtoLink = `mailto:hello@uxloom.in?subject=${encodeURIComponent(
+        `Message from ${name}`
+      )}&body=${encodeURIComponent(
+        `Name: ${fullName}\nEmail: ${email}\n\nMessage:\n${projectDetails}`
+      )}`;
+
+      // Open mail client
+      window.open(mailtoLink, "_self");
+    }
+
+    setFormData({
+      fullName: "",
+      email: "",
+      projectDetails: "",
+    });
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  useEffect(() => {
+    // Dynamically load the external script
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src =
+      "https://www.designrush.com/topbest/js/widgets/agency-reviews.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Clean up the script on component unmount
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <div className="landing-page">
       <div className="div-2">
@@ -98,31 +198,78 @@ export const LandingPage = () => {
                   <div className="text-wrapper-3">Follow us</div>
 
                   <div className="group-6">
-                    <div className="social-media-card">
+                    <div
+                      className="social-media-card"
+                      onClick={() => {
+                        window.open(
+                          "https://www.facebook.com/people/UXloom-Design-Studio/61570916670477/",
+                          "_blank"
+                        );
+                      }}
+                    >
                       <SocialMediaLogo className="social-media-logo" />
                     </div>
 
                     <img
                       className="social-media-card-2"
                       alt="Social media card"
-                      src="https://c.animaapp.com/g1v2RMFM/img/social-media-card.svg"
+                      src="https://innovartan.s3.amazonaws.com/8982960cd3e2d1aa1b49dae720668b61373371869/e2f3d742fe54fbf8e579da59c570132b.png"
+                      onClick={() => {
+                        window.open(
+                          "https://www.behance.net/uxloomstudio",
+                          "_blank"
+                        );
+                      }}
                     />
 
-                    <div className="social-media-logo-wrapper">
+                    <img
+                      className="social-media-card-3"
+                      alt="Social media card"
+                      src="https://innovartan.s3.amazonaws.com/7e9163cf428399bbce4f11c7f5a7533c937788153/d3ac2d269df6ce6674f33671d32eb124.png"
+                      onClick={() => {
+                        window.open(
+                          "https://dribbble.com/uxloomstudio/",
+                          "_blank"
+                        );
+                      }}
+                    />
+
+                    <div
+                      className="social-media-logo-wrapper"
+                      onClick={() => {
+                        window.open(
+                          "https://www.linkedin.com/company/uxloom/",
+                          "_blank"
+                        );
+                      }}
+                    >
                       <SocialMediaLogo1
                         className="icon-instance-node"
                         color="white"
                       />
                     </div>
 
-                    <div className="social-media-logo-2-wrapper">
+                    <div
+                      className="social-media-logo-2-wrapper"
+                      onClick={() => {
+                        window.open(
+                          "https://www.instagram.com/uxloom/",
+                          "_blank"
+                        );
+                      }}
+                    >
                       <SocialMediaLogo2 className="icon-instance-node" />
                     </div>
                   </div>
                 </div>
 
                 <div className="group-7">
-                  <button className="CTA-2">
+                  <button
+                    className="CTA-2"
+                    onClick={() => {
+                      window.open("mailto:hello@uxloom.in", "_blank");
+                    }}
+                  >
                     <div className="img-wrapper">
                       <img
                         className="img-2"
@@ -136,7 +283,12 @@ export const LandingPage = () => {
                     </div>
                   </button>
 
-                  <button className="CTA-3">
+                  <button
+                    className="CTA-3"
+                    onClick={() => {
+                      window.open("tel:+918178652544", "_blank");
+                    }}
+                  >
                     <div className="img-wrapper">
                       <img
                         className="img-2"
@@ -163,9 +315,15 @@ export const LandingPage = () => {
                   <div className="frame-6">
                     <input
                       type="text"
+                      name="fullName"
+                      value={formData.fullName}
+                      onChange={handleInputChange}
                       style={{ width: "100%", border: "none", outline: "none" }}
                       placeholder="Enter your name"
                     />
+                    {errors.fullName && (
+                      <div className="error">{errors.fullName}</div>
+                    )}
                   </div>
                 </div>
 
@@ -175,9 +333,15 @@ export const LandingPage = () => {
                   <div className="frame-6">
                     <input
                       type="text"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       style={{ width: "100%", border: "none", outline: "none" }}
                       placeholder="Enter your email"
                     />
+                    {errors.email && (
+                      <div className="error">{errors.email}</div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -187,26 +351,32 @@ export const LandingPage = () => {
                   <div className="text-wrapper-6">Project Details</div>
 
                   <div className="frame-7">
-                    <input
-                      type="text"
+                    <textarea
+                      name="projectDetails"
+                      value={formData.projectDetails}
+                      onChange={handleInputChange}
                       style={{
                         width: "100%",
                         height: "100%",
                         border: "none",
                         outline: "none",
                       }}
-                      multiple
-                      maxLength={5000}
+                      maxLength={500}
                       placeholder="Tell us about your project"
                     />
+                    {errors.projectDetails && (
+                      <div className="error">{errors.projectDetails}</div>
+                    )}
                   </div>
                 </div>
               </div>
 
-              <DeviceWebStyle
-                className="device-web-style-primary-size-extralarge"
-                text="Submit"
-              />
+              <div onClick={handleSubmit}>
+                <DeviceWebStyle
+                  className="device-web-style-primary-size-extralarge"
+                  text="Submit"
+                />
+              </div>
             </div>
           </div>
 
@@ -299,13 +469,24 @@ export const LandingPage = () => {
               </div>
             </div>
 
-            <StickyAnimationm className="sticky-animationm" />
+            <StickyAnimationm
+              className="sticky-animationm"
+              onClick={() => {
+                window.open("mailto:hello@uxloom.in", "_blank");
+              }}
+            />
             <StyleWhatsappHoverWrapper
               className="sticky-animationm-instance"
-              hover={false}
-              image="https://c.animaapp.com/g1v2RMFM/img/image-4459-2@2x.png"
+              hover={true}
+              image="https://innovartan.s3.amazonaws.com/f9875cecec3544745e59ff034f28e6482121016360/453606f53e1ca8b9e687741ee0b99029.png"
               imageClassName="design-component-instance-node"
               style="whatsapp"
+              onClick={() => {
+                window.open(
+                  "https://join.skype.com/invite/qve74QlTOTm2",
+                  "_blank"
+                );
+              }}
             />
           </div>
 
@@ -399,6 +580,27 @@ export const LandingPage = () => {
               <p className="text-wrapper-10">Get Your Free UX Audit</p>
             </div>
           </div>
+
+          <div className="group-120">
+            {/* GoodFirm Widget */}
+            <div
+              className="goodfirm-widget"
+              data-widget-type="goodfirms-widget-t1"
+              data-height="198"
+              data-company-id="167322"
+            ></div>
+
+            {/* Clutch Widget */}
+            <div
+              className="clutch-widget"
+              data-url="https://widget.clutch.co"
+              data-widget-type="1"
+              data-height="40"
+              data-nofollow="true"
+              data-expandifr="true"
+              data-clutchcompany-id="2466467"
+            ></div>
+          </div>
         </div>
 
         <div className="group-19">
@@ -479,10 +681,7 @@ export const LandingPage = () => {
           </div>
         </div>
 
-        <p className="your-one-stop">
-          Your One-Stop Destination for <br />
-          UI, UX, and Product Design
-        </p>
+        <p className="your-one-stop">Our Services</p>
 
         <div className="text-wrapper-22">Let’s Work Together</div>
 

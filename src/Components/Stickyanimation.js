@@ -14,6 +14,9 @@ export const StickyAnimationm = ({ className }) => {
       viewBox="0 0 228 108"
       width="228"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={() => {
+        window.open("mailto:hello@uxloom.in", "_blank"); 
+      }}
     >
       <g className="g" filter="url(#filter0_d_69_1030)">
         <circle className="circle" cx="174" cy="50" fill="#1CB2B7" r="30" />
