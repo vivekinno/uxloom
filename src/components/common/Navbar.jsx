@@ -12,7 +12,7 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/services", label: "Services" },
-    { to: "/portfolio", label: "Portfolio" },
+    { to: "/coming-soon", label: "Portfolio" },
     { to: "/about", label: "About Us" },
     { to: "/contact", label: "Contact" },
   ];
@@ -61,7 +61,7 @@ const Navbar = () => {
             
           ))}
          <Link
-            to="/new-link"
+            to="/comming-soon"
             className="block hover:text-[#00CCCC] text-black"
             onClick={() => setIsOpen(false)}
           >

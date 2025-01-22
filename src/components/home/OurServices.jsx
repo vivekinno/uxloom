@@ -6,12 +6,12 @@ const services = [
     icon: "/images/Design Services.gif", 
     details: [
       "Mobile App Design",
-      "Web App Design",
-      "SaaS Platform Design",
+      "Web & SaaS Product Design",
+      "Design System & Guidelines",
     ],
   },
   {
-    title: "UX Research",
+    title: "UX Design",
     icon: "/images/UX Research.gif", 
     details: [
       "User Research",
@@ -32,9 +32,9 @@ const services = [
     title: "Branding & Media",
     icon: "/images/Branding  & Media.gif", 
     details: [
-      "Branding & Logo Design",
-      "Photography & Podcast Setup",
-      "Video Editing & Cinematography",
+      "Logo and Graphic Design",
+      "Banner and Poster Design",
+      "Icon and Illustrations",
     ],
   },
 ];

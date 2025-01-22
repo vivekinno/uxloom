@@ -8,7 +8,7 @@ const testimonialSection = [
     name: 'Prashant Sharma',
     designation: 'Founder, Innovartan Learning',
     feedback:
-      '“Outstanding creative work! The team delivered beyond our expectations and helped transform our brand.”',
+      '"Working with UXLoom was a game-changer for Innovartan. Their team reimagined our user experiences and digital presence, creating a seamless and engaging website that reflects our mission. Their expertise in understanding our needs and delivering beyond expectations has truly elevated our brand. Highly recommended!"',
     stars: 4,
   },
   {
@@ -17,7 +17,7 @@ const testimonialSection = [
     name: 'Dr. Sonal Bathla',
     designation: 'Founder, Okti Foundation',
     feedback:
-      '“Outstanding creative work! The team delivered beyond our expectations and helped transform our brand.”',
+      '"UXLoom’s redesign of our website has been remarkable. They captured the essence of our mission and translated it into a clean, user-friendly, and visually appealing platform. Their dedication to delivering excellence has made a significant impact on how we connect with our audience. Thank you for your exceptional work!"',
     stars: 4,
   },
   {
@@ -26,7 +26,7 @@ const testimonialSection = [
     name: 'Jitendra Singh',
     designation: 'Founder, Holiday Booking',
     feedback:
-      '“Outstanding creative work! The team delivered beyond our expectations and helped transform our brand.”',
+      '"UXLoom did an incredible job with our branding and website design. They brought fresh ideas and crafted a modern, professional look that resonates with our target audience. The website is now a true representation of our vision. Their creativity and attention to detail are unmatched!"',
     stars: 4,
   },
 ];
@@ -57,10 +57,10 @@ const Testimonials = () => {
                   className="w-16 h-16 rounded-full mb-4"
                 />
                <div className='flex flex-col'>
-               <h3 className="text-base font-bold text-[#333333]">
+               <h3 className="text-base font-bold text-left text-[#333333]">
                   {testimonial.name}
                 </h3>
-                <p className="text-sm text-[#5C5C5C] mb-4">
+                <p className="text-sm text-[#5C5C5C] text-left mb-4">
                   {testimonial.designation}
                 </p>
                </div>
