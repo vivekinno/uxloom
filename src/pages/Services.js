@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeaderComponent } from '../components/common/HeaderComponent'
 import CardGrid from '../components/services/CardGrid'
+import CardComponent from '../components/services/CardComponent'
 
 export const Services = () => {
   return (
@@ -12,9 +13,11 @@ export const Services = () => {
               description="We craft designs that elevate User Experiences"
               image="/images/solution.gif"
             />
+             <CardGrid/>
+             <CardComponent/>
             </div>
             </div>
-            <CardGrid/>
+           
             </>
   )
 }

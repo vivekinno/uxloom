@@ -20,8 +20,10 @@ const Navbar = () => {
   return (
     <nav className="bg-white sticky top-0 z-50 w-full font-poppins">
       <div className=" px-6 py-4 sm:px-10 sm:py-6 md:px-32 md:py-6 lg:px-32 lg:py-6 xl:px-32 xl:py-6 2xl:px-32 2xl:py-6 flex justify-between items-center shadow-md">
-        <div className="text-lg font-bold">
-          <img src="/images/uxloom_logo.svg" alt="logo" />
+        <div className="text-lg font-bold"> 
+       <Link to="/">
+       <img src="/images/uxloom_logo.svg" alt="logo" />
+       </Link>
         </div>
 
         <div className="hidden lg:flex text-base font-medium gap-8">

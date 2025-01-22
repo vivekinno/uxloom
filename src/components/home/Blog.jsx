@@ -6,26 +6,25 @@ const articles = [
   {
     id: 1,
     category: "UX Design",
-    title: "The Future of UX Design in 2025",
-    description:
-      "Exploring emerging trends and technologies shaping the future of user experience design.",
+    title: "How UI/UX Design Can Transform Your Business for Growth",
     image: "/images/UX Design.png",
+    link: "https://www.linkedin.com/pulse/how-uiux-design-can-transform-your-business-growth-uxloom-ml9ac/?trackingId=rI8v8ZloMe6tqrMFffspMg%3D%3D",
   },
   {
     id: 2,
     category: "Product Design",
-    title: "Effective Website that Converts",
-    description:
-      "Exploring emerging trends and technologies shaping the future of user experience design.",
+    title:
+      "How UXLoom UI/UX Design Agency Helped Transform Innovartan Learning’s Digital Presence",
     image: "/images/Product design.png",
+    link: "https://www.linkedin.com/pulse/how-uxloom-uiux-design-agency-helped-transform-innovartan-learnings-bwfrc/?trackingId=zhuFfVTPyDr4ikUQLVBKVw%3D%3D",
   },
   {
     id: 3,
     category: "Branding",
-    title: "Brand Strategy Essentials",
-    description:
-      "Exploring emerging trends and technologies shaping the future of user experience design.",
+    title:
+      "Emojis can provide an added layer of self-presentation, a statement of identity",
     image: "/images/Branding.png",
+    link: "https://www.linkedin.com/pulse/emojis-can-provide-added-layer-self-presentation-statement-thakur/?trackingId=h0dFlzPAQBCon76UAplRRA%3D%3D",
   },
 ];
 
@@ -59,7 +58,9 @@ const Blog = () => {
                   {article.description}
                 </p>
                 <Link
-                  to="#"
+                  to={article.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-[#00CCCC] text-lf font-medium hover:underline flex items-center gap-2"
                 >
                   Read More{" "}

@@ -10,6 +10,7 @@ import {Contact} from './pages/Contact'
 import Footer from './components/common/Footer';
 import { CommonIcons } from './components/common/CommonIcons';
 import CommingSoon from './pages/CommingSoon';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/coming-soon" element={<CommingSoon/>} />
+        <Route path="*" element={<PageNotFound/>} />
       </Routes>
       <CommonIcons className="hidden lg:block" />
       <Footer/>

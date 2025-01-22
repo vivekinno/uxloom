@@ -18,7 +18,6 @@ const Hero = () => {
         </div>
       <ReviewComponent/>
       </div>
-
       <div className="flex justify-center items-center sm:w-full md:w-[50%] lg:w-[50%] xl:w-[50%] ">
          <img src="/images/Uxloom_hero.png" alt="hero-img" />
       </div>
