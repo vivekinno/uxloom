@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Navbar from './components/common/Navbar';
 import Home from './pages/Home';
@@ -11,12 +11,14 @@ import Footer from './components/common/Footer';
 import { CommonIcons } from './components/common/CommonIcons';
 import CommingSoon from './pages/CommingSoon';
 import PageNotFound from './pages/PageNotFound';
+import ScrollToTop from './components/common/ScrollToTop';
 
 function App() {
   
-  return (
-    <BrowserRouter>
+return (
+  <BrowserRouter>
     <Navbar/>
+  <ScrollToTop/>
     <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/services" element={<Services/>} />

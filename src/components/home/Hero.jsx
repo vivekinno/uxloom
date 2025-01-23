@@ -1,7 +1,16 @@
 
+import { useState } from "react";
 import ReviewComponent from "../common/ReviewComponent";
+import Modal from "../common/Modal";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/contact");
+  };
   return (
    <div className="w-full bg-white font-poppins">
      <div className="px-6 py-4 sm:px-10 sm:py-6 md:px-32 md:py-12 lg:px-32 lg:py-12 xl:px-32 xl:py-12 2xl:px-32 2xl:py-12 flex flex-col-reverse lg:flex-row justify-center items-center gap-4 lg:gap-10">
@@ -13,8 +22,8 @@ const Hero = () => {
           <p className=" text-sm md:text-base lg:text-base font-normal text-[#333333]">Elevate user experiences, boost engagement, and drive growth with designs that truly make a difference.</p>
         </div>
         <div className="flex gap-6">
-            <button className="text-white text-base font-medium bg-[#00CCCC] border border-transparent rounded-full px-6 py-2">Get Started</button>
-            <button className="hidden lg:block text-[#00CCCC] text-base font-medium bg-transparent border border-[#00CCCC] rounded-full px-6 py-2">Let’s Discuss</button>
+            <button   onClick={() => setIsModalOpen(true)} className="text-white text-base font-medium bg-[#00CCCC] border border-transparent rounded-full px-6 py-2">Get Started</button>
+            <button   onClick={handleNavigation} className="hidden lg:block text-[#00CCCC] text-base font-medium bg-transparent border border-[#00CCCC] rounded-full px-6 py-2">Let’s Discuss</button>
         </div>
       <ReviewComponent/>
       </div>
@@ -22,6 +31,7 @@ const Hero = () => {
          <img src="/images/Uxloom_hero.png" alt="hero-img" />
       </div>
     </div>
+    <Modal isStart={isModalOpen} onClose={() => setIsModalOpen(false)} />
    </div>
   );
 };

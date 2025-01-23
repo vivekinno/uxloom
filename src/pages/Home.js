@@ -7,6 +7,7 @@ import Testimonials from '../components/home/Testimonials'
 import Blog from '../components/home/Blog'
 import GetInTouch from '../components/common/GetInTouch'
 import StartProject from '../components/common/StartProject'
+import Modal from '../components/common/Modal'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <StartProject/>
         <Blog/>
         <GetInTouch/>
+        <Modal/>
     </div>
   )
 }
