@@ -1,7 +1,6 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import {
-  FaBehance,
   FaDribbble,
   FaFacebookF,
   FaInstagram,
@@ -15,7 +14,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const quickLinks = [
     { name: "Services", path: "/services" },
-    { name: "Portfolio", path: "/coming-soon" },
+    { name: "Portfolio", path: "/portfolio" },
     { name: "About Us", path: "/about" },
     { name: "Sitemap", path: "/coming-soon" },
   ];

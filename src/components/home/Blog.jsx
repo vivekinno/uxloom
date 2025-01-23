@@ -46,8 +46,8 @@ const Blog = () => {
               key={article.id}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <img src={article.image} alt={article.title} className="  " />
-              <div className="px-1 py-6 lg:p-6">
+              <img src={article.image} alt={article.title} className="" />
+              <div className="px-2 py-6 lg:p-6">
                 <p className="text-[#00CCCC] font-medium text-base mb-2">
                   {article.category}
                 </p>
@@ -61,9 +61,9 @@ const Blog = () => {
                   to={article.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#00CCCC] text-lf font-medium hover:underline flex items-center gap-2"
+                  className="text-[#00CCCC] text-lg font-medium hover:underline flex items-center gap-2"
                 >
-                  Read More{" "}
+                  Read More
                   <span>
                     <FaArrowRight />
                   </span>
