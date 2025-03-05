@@ -4,7 +4,7 @@ import { BsSkype } from "react-icons/bs";
 
 export const CommonIcons = () => {
     const handleWhatsappClick = () => {
-        window.open("https://wa.me/qr/U2RDQRSVMBGBO1", "_blank");
+        window.open("https://wa.me/919953294265", "_blank");
       };
     
       const handleSkypeClick = () => {
