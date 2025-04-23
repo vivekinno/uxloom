@@ -23,7 +23,7 @@ return (
         <Route path="/" element={<Home/>} />
         <Route path="/services" element={<Services/>} />
         <Route path="/portfolio" element={<Portfolio/>} />
-        <Route path="/about" element={<AboutUs/>} />
+        <Route path="/about" element={<CommingSoon/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/coming-soon" element={<CommingSoon/>} />
         <Route path="*" element={<PageNotFound/>} />
